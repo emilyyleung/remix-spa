@@ -5,9 +5,11 @@ import { copyFileSync } from "node:fs";
 import { join } from "node:path";
 
 export default defineConfig({
+  // Make sure to update this to the name of the repo for Github pages
   base: '/remix-spa/',
   plugins: [
     remix({
+      // Update this too
       basename: '/remix-spa/',
       ssr: false,
       buildEnd(args) {
